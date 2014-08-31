@@ -12,7 +12,9 @@ You only need [RPi.GPIO]:
   	$ tar zxf RPi.GPIO-0.1.0.tar.gz
   	$ cd RPi.GPIO-0.1.0
   	$ sudo python setup.py install
+
+## Settup
  
-Then to make the script door_status_led.py run at boot add 'python /"path"/DoorOpenLED/door_status_led.py' to /etc/rc.local.
+To make the script door_status_led.py run at boot, add 'python /"path"/DoorOpenLED/door_status_led.py' to /etc/rc.local.
 
 Then connect a LED light to gpio 7 and ground.
