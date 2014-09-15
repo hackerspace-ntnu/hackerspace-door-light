@@ -22,7 +22,7 @@ def main():
 		time.sleep(10) # Delay 10 second
 	else:
 		# Blink if no connection
-		flashLED()
+		setLED(False)
 
 def setLED(value):
 	GPIO.output(pin_number_LED, value)
@@ -41,13 +41,6 @@ def checkDoor():
 	data = json.loads(response.read())
 
 	return data[0]['isOpen']
-
-def flashLED():
-	# Blink with the LED
-	setLED(True)
-	time.sleep(0.5)
-	setLED(False)
-	time.sleep(0.5)
 
 if __name__ == "__main__":
 	main()
