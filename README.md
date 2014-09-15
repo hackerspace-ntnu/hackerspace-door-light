@@ -1,8 +1,7 @@
 # hackerspace-door light
 door_status_led.py is a simple program that queries the API at 
 http://hackerspace.idi.ntnu.no/api/door and controls a LED-light showing on whether the
-door to the hackerspace is open. If the script fails to contact the API, it will instead
-flash the led for half a second. 
+door to the hackerspace is open. If the script fails to contact the API, it will turn the LED off. 
 
 ## Installing dependencies.
 
