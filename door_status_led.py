@@ -7,13 +7,14 @@ import urllib2
 import RPi.GPIO as GPIO
 
 
-SLEEP = 3
+SLEEP = 10
 
 LED_PIN = 7
 API_HOST = "http://hackerspace.idi.ntnu.no/api/door"
 
 
 def main():
+    GPIO.setmode(GPIO.BOARD)
     GPIO.setup(LED_PIN, GPIO.OUT)
 
     while True:
