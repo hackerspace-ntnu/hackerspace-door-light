@@ -17,3 +17,7 @@ You only need [RPi.GPIO]:
 To make the script door_status_led.py run at boot, add 'python /"path"/DoorOpenLED/door_status_led.py' to /etc/rc.local.
 
 Then connect a LED light in series with a resistor between gpio 7 and ground.
+## Make init daemon
+- copy door_status_led to /etc/init.d
+- update initrc
+    update-rc.d /etc/init.d/door_status_led defaults
