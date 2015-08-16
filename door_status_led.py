@@ -1,5 +1,4 @@
 #!/usr/bin/python2
-# By Geir Kulia, 28. August 2014
 
 import time
 import json
